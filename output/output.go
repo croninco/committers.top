@@ -141,7 +141,7 @@ var companyLogin = regexp.MustCompile(`^\@([a-zA-Z0-9]+)$`)
 
 func trim(users GithubUserList, numTop int) GithubUserList {
 	if numTop == 0 {
-		numTop = 256
+		numTop = 500
 	}
 	if len(users) < numTop {
 		numTop = len(users)
